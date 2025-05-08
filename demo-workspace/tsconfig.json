@@ -4,13 +4,13 @@
   "files": [],
   "references": [
     {
-      "path": "./frontend/reactApplication"
+      "path": "./react-app"
     },
     {
-      "path": "./backend/api-e2e"
+      "path": "./backend-api-e2e"
     },
     {
-      "path": "./backend/api"
+      "path": "./backend-api"
     }
   ]
 }

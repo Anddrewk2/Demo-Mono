@@ -1,11 +1,10 @@
 {
-  "name": "@monorepo-demo/api-e2e",
+  "name": "@demo-workspace/backend-api-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "name": "api-e2e",
     "implicitDependencies": [
-      "api"
+      "@demo-workspace/backend-api"
     ],
     "targets": {
       "e2e": {
@@ -14,12 +13,12 @@
           "{projectRoot}/test-output/jest/coverage"
         ],
         "options": {
-          "jestConfig": "backend/api-e2e/jest.config.ts",
+          "jestConfig": "backend-api-e2e/jest.config.ts",
           "passWithNoTests": true
         },
         "dependsOn": [
-          "api:build",
-          "api:serve"
+          "@demo-workspace/backend-api:build",
+          "@demo-workspace/backend-api:serve"
         ]
       }
     }

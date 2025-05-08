@@ -1,9 +1,8 @@
 {
-  "name": "@monorepo-demo/api",
+  "name": "@demo-workspace/backend-api",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "name": "api",
     "targets": {
       "build": {
         "executor": "nx:run-commands",
@@ -29,15 +28,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "api:build",
+          "buildTarget": "@demo-workspace/backend-api:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "api:build:development"
+            "buildTarget": "@demo-workspace/backend-api:build:development"
           },
           "production": {
-            "buildTarget": "api:build:production"
+            "buildTarget": "@demo-workspace/backend-api:build:production"
           }
         }
       }

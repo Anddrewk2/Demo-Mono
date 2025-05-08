@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-demo/source",
+  "name": "@demo-workspace/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
@@ -48,8 +48,9 @@
   },
   "workspaces": [
     "packages/*",
-    "frontend/*",
-    "backend/*"
+    "react-app",
+    "backend-api",
+    "backend-api-e2e"
   ],
   "dependencies": {
     "@nestjs/common": "^10.0.2",
